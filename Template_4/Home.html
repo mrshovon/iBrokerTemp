@@ -1,111 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template- 4</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>iBroker template 4</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link href="vendors/prism/prism.css" rel="stylesheet">
-    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/css/theme.css" rel="stylesheet" />
-    <link href="assets/css/user.css" rel="stylesheet" />
-    <style>
-      .logo {
-        width: 250px;
-      }
-      .lgn:hover{
-        background-color: #03614b;
-        border-color: #03614b;
-        color: white !important;
-      }
-    </style>
-  </head>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <body>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/Logo.png" alt="" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="user-registration/registration_form.html">Open BO Account</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" aria-current="page" href="Template_Homepage_login_signup/signup2.html">Sign Up</a></li> -->
-              <li class="nav-item mt-2 mt-lg-0"><a class="nav-link btn btn-light text-black w-md-25 w-50 w-lg-100 lgn" aria-current="page" href="j&c.html">Join and Create</a></li>
-            </ul>
-          </div>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="bizconsult-1.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="bizconsult-1.0.0/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
-      </nav>
-      <div class="bg-dark"><img class="img-fluid position-absolute end-0" src="assets/img/hero/hero-bg.png" alt="" />
+        <!-- Spinner End -->
 
 
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section>
-          <div class="container">
-            <div class="row align-items-center py-lg-8 py-6">
-              <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="text-white fs-5 fs-xl-6">i-Broker makes it easy to open an account</h1>
-                <p class="text-white py-lg-3 py-2">Click the below to Open BO account..</p>
-                <div class="d-sm-flex align-items-center gap-3">
-                  <button class="btn btn-success text-black mb-3 w-75 lgn" onclick="window.open('user-registration/registration_form.html','_self')">Open BO Account</button>
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">iBroker</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <a href="j&c.html" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Join/Create</a>
                 </div>
-              </div>
-              <div class="col-lg-6 text-center text-lg-end mt-3 mt-lg-0"><img class="img-fluid" src="assets/img/hero/hero-graphics.png" alt="" /></div>
-            </div> 
-          </div>
-          <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
-</div>
-</section>
-    <!-- <section> close ============================-->
-    <!-- <section> begin ============================-->
-    <section class="pt-0">
+            </nav>
 
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-6 col-sm-12"><a href="index.html"><img class="img-fluid mt-5 mb-4 logo" src="assets/img/black-logo.png" alt="" /></a>
-            <p class="w-lg-75 text-gray">Now Our Services are just at your touch. <br> Call Our 24/7 contact centre service: <br> Dial- <b>16325</b> ; <br> From Overseas, Call 09611016325.</p>
-          </div>
+            <div class="container-xxl bg-primary2 hero-header">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated zoomIn">i-Broker makes it easy to open an account</h1>
+                            <p class="text-white pb-3 animated zoomIn">Click the link below to Open BO account.</p>
+                            <a href="user-registration/registration_form.html" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">OPEN BO Account</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/Logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="text-gray">All rights reserved @ibroker.</p>
-      </div>
-      <!-- end of .container-->
-    </section>
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="vendors/popper/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/anchorjs/anchor.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/fontawesome/all.min.js"></script>
-    <script src="vendors/lodash/lodash.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="vendors/prism/prism.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+        <!-- Navbar & Hero End -->
+       <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class=""></i>Now Our Services are just at your touch..<br> Call Our 24/7 contact centre service:</p>
+                        <p><i class=""></i> Dial-16325; <br>   From Overseas, Call 09611016325.</p>
+                        <p><i class=""></i>info@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">iBroker</a>, All Right Reserved. </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
-  </body>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bizconsult-1.0.0/lib/wow/wow.min.js"></script>
+    <script src="bizconsult-1.0.0/lib/easing/easing.min.js"></script>
+    <script src="bizconsult-1.0.0/lib/waypoints/waypoints.min.js"></script>
+    <script src="bizconsult-1.0.0/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="bizconsult-1.0.0/js/main.js"></script>
+</body>
 
 </html>
