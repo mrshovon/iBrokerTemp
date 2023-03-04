@@ -8,6 +8,8 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets2/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets2/vendors/css/vendor.bundle.base.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style_copy.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="assets2/vendors/jvectormap/jquery-jvectormap.css">
@@ -90,7 +92,7 @@
           </li>
           
           <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="Portfolio.html">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
@@ -229,22 +231,35 @@
           </div>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-         
-          <div class="card-body" style="background-color: white !important; color: #0c675e;">
-            <h4 class="card-title" style="font-size: xx-large;">Client Portfolio</h4>
-            <div class="form-group">
-              <label for="exampleFormControlSelect3">Invester Code</label>
-              <select class="form-control form-control-sm" id="exampleFormControlSelect3" style="color:bisque; width: 100px;">
-                <option selected>S24XX</option>
-              </select> <br> <br>
-              <label for="exampleFormControlSelect3">Date</label><br>
-              <input type="date" name="" id=""> <br> <br>
-              <label for="exampleFormControlSelect3">Print Option</label>
-              <select class="form-control form-control-sm" id="exampleFormControlSelect3" style="color:bisque; width: 100px;" >
-                <option selected>PDF</option>
-              </select> <br><br>
-              <button class="btnn">Preview</button>
+        <div class="main-panel" style="width: 70%; background-color: #0c675e;">
+          
+          <div class="wrapper">
+            <br> <br> <br>
+            <h3>IPO APPLICATION</h3>
+            <div class="tabs">
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-2" checked class="tab-switch">
+                <label for="tab-2" class="tab-label">IPO Application Form</label>
+                <div class="tab-content">
+                  <div style="width: 700px;"> 
+                    <label for="">Declaration date</label>
+                    <input type="text"> <br> <br>
+                    <label for="">start date</label>
+                    <input type="text"> <br> <br>
+                    <label for="">end date</label>
+                    <input type="text"> <br> <br>
+                    <label for="">Allocation date</label>
+                    <input type="text"> <br> <br>
+                    <Label>available Balance</Label>
+                    <input type="text"> <br> <br>
+                  </div>
+                 </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-1" class="tab-switch">
+                <label for="tab-1" class="tab-label">Applied IPO List</label>
+                <div class="tab-content" style="width: 700px;">  </div>
+              </div> 
             </div>
           </div>
         </div>
