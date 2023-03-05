@@ -26,6 +26,14 @@
           color: white !important;
           background-color: #0c675e;
       }
+      label{
+        font-size: 20px !important;
+        width: 300px;
+        justify-items: center;
+      }
+      .mcls{
+        font-size: smaller;
+      }
   </style>
   </head>
   <body>
@@ -90,7 +98,7 @@
           </li>
           
           <li class="nav-item menu-items">
-            <a class="nav-link" href="Portfolio.html">
+            <a class="nav-link" href="#">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
@@ -229,39 +237,47 @@
           </div>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
+        <div class="main-panel" style="background-color:#ffffff !important;">
          
-          <div class="card-body" style="background-color: white !important; color: #0c675e;">
-            <h4 class="card-title" style="font-size: xx-large;">Client Portfolio</h4>
-            <div class="form-group">
+          <div class="" style= "background-color: #23514d!important; margin: 50px;">
+            <h4 class="card-title" style="font-size: 60px; margin: 50px;">Client Portfolio</h4>
+            <div class="form-group" style="margin: 50px; font-size: 20px;">
               <label for="exampleFormControlSelect3">Invester Code</label>
-              <select class="form-control form-control-sm" id="exampleFormControlSelect3" style="color:bisque;width: 100px;">
+              <select class="form-control form-control-sm mcls" id="exampleFormControlSelect3" style="color:bisque; width: 150px; height: 40px; display: inline;">
                 <option selected>S24XX</option>
               </select> <br> <br>
-              <label for="exampleFormControlSelect3">Date</label><br>
-              <input type="date" name="" id=""> <br> <br>
+              <label for="exampleFormControlSelect3">Date</label>
+              <input type="date" name="" id="" style="display: inline;" class="mcls"> <br> <br>
               <label for="exampleFormControlSelect3">Print Option</label>
-              <select class="form-control form-control-sm" id="exampleFormControlSelect3" style="color:bisque; width: 100px;">
+              <select class="form-control form-control-sm mcls" id="exampleFormControlSelect3" style="color:bisque; width: 150px; height: 40px; display: inline;" >
                 <option selected>PDF</option>
               </select> <br><br>
-              <button class="btnn">Preview</button>
+              <button class="btnn mcls">Preview</button>
             </div>
           </div>
+          <div style= "background-color: #23514d!important; margin: 10px;">
+            <footer style="text-align: center;">
+              <span>Copyright © iBroker 2023</span>
+            </footer>
+          </div>
+
+
         </div>
       </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
+          <!-- <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block" style="color:#0c675e !important">Copyright © iBroker 2023</span>
             </div>
-          </footer>
+          </footer> -->
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
     </div>
+
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="assets2/vendors/js/vendor.bundle.base.js"></script>
