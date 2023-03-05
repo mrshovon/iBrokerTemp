@@ -51,14 +51,14 @@ a:hover { color: tomato; }
 	
 	padding: 10px;
 	text-align: center;
-	background: #9768D1;
+	background: #069c90;
 	cursor: pointer;
 	transition: background 0.5s ease;
 	
 }
 
 .tabby-tab label:hover {
-	background: #7B52AB;
+	background: #0c675e;
 }
 
 .tabby-content {
@@ -70,7 +70,7 @@ a:hover { color: tomato; }
 	
 	padding: 20px;
 	border-radius: 0 0 8px 8px;
-	background: #553285;
+	background:#0c675e;
 	
 	transition: 
 		opacity 0.8s ease,
@@ -94,7 +94,7 @@ a:hover { color: tomato; }
 
 .tabby-tab [type=radio] { display: none; }
 [type=radio]:checked ~ label {
-	background: #553285;
+	background: #0c675e;
 	z-index: 2;
 }
 
