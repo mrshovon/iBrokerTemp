@@ -55,9 +55,9 @@ body {
   top: 4.65em;
   left: 1.79em;
   padding: 1.618rem;
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0.25rem solid #bdc3c7;
+  background: #23514d;
+  color: #ffffff;
+  /* border-bottom: 0.25rem solid #23514d; */
   opacity: 0;
   transition: all 0.35s;
 }
@@ -75,3 +75,7 @@ body {
   opacity: 1;
   transition: all 0.35s;
 }
+@media (min-width: 1350px) {
+  .clstbcntnt {
+    width: 600px }
+   }

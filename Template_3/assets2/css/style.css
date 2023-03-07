@@ -18035,7 +18035,7 @@ div.tagsinput {
     background: #0d0d0d; }
 
 .tab-content {
-  border: 1px solid #2c2e33;
+  /* border: 1px solid #2c2e33; */
   border-top: 0;
   padding: 2rem 1rem;
   text-align: justify; }
