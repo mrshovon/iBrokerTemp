@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> iBrokerNewUIDesign</title>
+    
+        <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Asset/css/all.css">
+        <link rel="stylesheet" href="Asset/css/style.css">
+        <link rel="stylesheet" href="SweetAlert/sweetalert2.min.css">
+        <link rel="stylesheet" href="css/alertify.min.js">
+        <link rel="stylesheet" href="js/alertify.js">
+
+ 
+</head>
+<body>
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="navbar-bg" style="height: 73px;background-image: linear-gradient(90deg, #378875 0%, #378875 100%);"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li>
+                            <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+                <ul class="navbar-nav navbar-right">
+
+                    <li class="dropdown">
+
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="Asset/img/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Hi,@User.Identity.Name</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="far fa-user"></i> Profile
+                            </a>
+                            <a href="features-activities.html" class="dropdown-item has-icon">
+                                <i class="fas fa-bolt"></i> Activities
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <form asp-area="" asp-controller="Home" asp-action="Index" method="post">
+                                <button type="submit" class="dropdown-item has-icon text-danger">
+                                    <i class="fas fa-sign-out-alt" style="padding-top:10px"></i> <a href="Home.html"></a> Logout
+                                </button>
+                            </form>
+                        </div>
+                    </li>
+
+
+                    @*  <li class="nav-item">
+
+                    <a asp-area="" asp-controller="Home" asp-action="Login" class="nav-link text-light" style="border:none;background-color: #f9a602;">Login <i class="fas fa-sign-out-alt" aria-hidden="true"></i></a>
+
+
+                    </li>*@
+                </ul>
+            </nav>
+            <div class="main-sidebar" style="background-image: linear-gradient(90deg, #378875 0%, #378875 100%);">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a class="text-white" asp-controller="Home" asp-action="Dashboard">iBroker</a>
+                    </div>
+
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a class="text-white" href="#">IBR</a>
+                    </div>
+                    <ul class="sidebar-menu">
+
+                        <li class="menu-header text-white">Dashboard</li>
+                        <li class="nav-item dropdown active">
+                            <a href="#" class="nav-link has-dropdown">
+                                <i class="fas fa-fire"></i><span>Dashboard</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="Home"
+                                       asp-action="Index">Customer View</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-header text-white">Admin Activities</li>
+                        <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-home"></i> <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Portfolio.html" asp-area="" asp-controller="Home"
+                                       asp-action="Portfolio" class="nav-link">
+                                <i class="fas fa-user-slash"></i> <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                             <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-audio-description"></i> <span>Ledger Details</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-trademark"></i> <span>Trade Confirmation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home"
+                                       asp-action="IPOApplication" class="nav-link" href="IPOApplication.html">
+                                <i class="fas fa-hourglass-start"></i> <span>IPO Application</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-money-check-alt"></i> <span>Fund Withdrawal</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-money-bill-wave-alt"></i> <span>Fund Deposit</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-certificate"></i> <span>Tax Certificate</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-television"></i> <span>Live Trade Monitor</span>
+                            </a>
+                        </li>
+                         <li>
+                            <a asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour" class="nav-link">
+                                <i class="fas fa-lock"></i> <span>Change Password</span>
+                            </a>
+                        </li>
+                         
+                        <li class="nav-item dropdown">
+                            
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Home"
+                                       asp-action="SetMealHour">Set Meal Hour</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Home"
+                                       asp-action="MealHourInfo">Meal Hour Info</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Home"
+                                       asp-action="AddFoodItem">Add Food Item</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-area="Admin" asp-controller="Home"
+                                       asp-action="FoodItemList">Food Item List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                       
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown">
+                                <i class="fas fa-th"></i> <span>Stock Status </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" asp-area="Stockmanager" asp-controller="Home"
+                                       asp-action="Index">Stock Status Graph </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-area="Stockmanager" asp-controller="Home"
+                                       asp-action="StockStatus">Stock Status </a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <!-- <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                        <a href="" class="btn btn-warning btn-lg btn-block btn-icon-split">
+                            <i class="fas fa-calendar" aria-hidden="true"></i> Date : @DateTime.Now.ToShortDateString()
+                        </a>
+                    </div> -->
+                </aside>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+
+
+                    @RenderBody()
+
+
+                </section>
+            </div>
+            <footer class="main-footer">
+                <div class="footer-right">
+                    Copyright &copy; 2020
+                    <div class="bullet"></div> Developed By Team Dawn
+                </div>
+
+            </footer>
+        </div>
+    </div>
+   
+        <script src="Asset/AJAX/ajaxjQueryjquery1.11.3.min.js"></script>
+        <script src="Asset/AJAX/ajaxjqueryvalidate1.14.0jquery.validate.min.js"></script>
+        <script src="Asset/AJAX/jquery.validate.unobtrusive.min.js"></script>
+
+        <script src="Asset/js/jQuery.min.js"></script>
+
+        <script src="Asset/js/popper.min.js"></script>
+        <script src="Asset/js/bootstrap.min.js"></script>
+        <script src="Asset/js/NiceScroll.min.js"></script>
+        <script src="Asset/js/scripts.js"></script>
+        <script type="text/javascript" src="SweetAlert/sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="ChartJs/ChartJs.js"></script>
+        <script type="text/javascript" src="js/html2pdf.bundle.js"></script>
+   
+
+   
+</body>
+</html>
