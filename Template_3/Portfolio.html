@@ -22,6 +22,15 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets2/images/favicon.png" />
     <style>
+      .card2{
+        background-color:#e7e7f9;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-top: 1.25rem;
+        box-sizing: border-box;
+        box-shadow:0px 1px 15px 0px #b2b4b5;
+        color: #6c757d;
+      }
       .btnn:hover{
           color: white !important;
           background-color: #0c675e;
@@ -33,6 +42,10 @@
       }
       .mcls{
         font-size: smaller;
+      }
+      input,option,select{
+        background-color: white !important;
+        color: #6c757d !important;
       }
   </style>
   </head>
@@ -239,27 +252,52 @@
         <!-- partial -->
         <div class="main-panel" style="background-color:#ffffff !important;">
          
-          <div class="" style= "background-color: #23514d!important; margin: 50px;border: 3px solid #23514d; border-radius: 5px;">
-            <h4 class="card-title" style="font-size: 60px; margin: 50px; border-bottom: 2px solid #ffffff;">Client Portfolio</h4>
-            <div class="form-group" style="margin: 50px; font-size: 15px;">
-              <label for="exampleFormControlSelect3">Invester Code:</label>
-              <select class="form-control form-control-sm mcls" id="exampleFormControlSelect3" style="color:bisque; width: 150px; height: 30px; display: inline;">
-                <option selected>S24XX</option>
-              </select> <br> <br>
-              <label for="exampleFormControlSelect3">Date:</label>
-              <input type="date" name="" id="" style="display: inline;" class="mcls"> <br> <br>
-              <label for="exampleFormControlSelect3">Print Option:</label>
-              <select class="form-control form-control-sm mcls" id="exampleFormControlSelect3" style="color:bisque; width: 150px; height: 30px; display: inline;" >
-                <option selected>PDF</option>
-              </select> <br><br>
-              <button class="btnn mcls">Preview</button>
+          <div class="row">
+            <div class="col-12">
+                <div class="card card2">
+                    <div class="card-header">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="card-body col-12 col-md-6">
+    
+    
+    
+                        <div class="form-group row">
+                            <label for="inputOption" class="col-sm-3 col-form-label">Investor Code</label>
+                            <div class="col-sm-9">
+                                <select class="form-control form-control-sm">
+                                    <option>A11455</option>
+                                    <option>S2643</option>
+                                    <option>A11456</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <label for="inputDate" class="col-sm-3 col-form-label">Date</label>
+                            <div class="col-sm-9">
+                                <input type="date" class="form-control" id="inputDate" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputOption" class="col-sm-3 col-form-label">Print Option</label>
+                            <div class="col-sm-9">
+                                <select class="form-control form-control-sm">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="float-right">
+                            <button type="submit" class="btn btn-primary btnn">Preview</button>
+                        </div>
+                    </div>
+    
+                </div>
             </div>
-          </div>
-          <div style= "background-color: #23514d!important; margin: 10px; height: 80%; border: 3px solid #23514d; border-radius: 5px;">
-            <footer style="text-align: center; font-size:20px;">
-              <span>Copyright © iBroker 2023</span>
-            </footer>
-          </div>
 
 
         </div>
