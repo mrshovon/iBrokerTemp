@@ -37,7 +37,7 @@ body {
   line-height: 2.75em;
   height: 3em;
   padding: 0 1.618em;
-  background: #1abc9c;
+  background: #aeb6b4;
   border-right: 0.125rem solid #16a085;
   color: #fff;
   cursor: pointer;
@@ -62,8 +62,8 @@ body {
   transition: all 0.35s;
 }
 .tab-switch:checked + .tab-label {
-  background: #fff;
-  color: #2c3e50;
+  background: #16a085;
+  color: #f5f6f7;
   border-bottom: 0;
   border-right: 0.125rem solid #fff;
   transition: all 0.35s;

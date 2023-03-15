@@ -18038,7 +18038,10 @@ div.tagsinput {
   /* border: 1px solid #2c2e33; */
   border-top: 0;
   padding: 2rem 1rem;
-  text-align: justify; }
+  text-align: justify; 
+  width: 95%;
+  overflow: auto;
+}
   .tab-content.tab-content-vertical {
     border-top: 1px solid #2c2e33; }
   .tab-content.tab-content-vertical-custom {
