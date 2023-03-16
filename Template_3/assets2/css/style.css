@@ -11607,11 +11607,14 @@ input[type="button"].btn-block {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
-  margin-left: -1px;
+  margin: 0px 3px;
+  border-radius: 3px;
   line-height: 1.25;
   color: #007bff;
-  background-color: #ffffff;
-  border: 1px solid #dee2e6; }
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+    
+}
   .page-link:hover, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a:hover,
   .jsgrid .jsgrid-pager .jsgrid-pager-page a:hover {
     z-index: 2;
@@ -15587,12 +15590,13 @@ input:focus {
 
 /* Typography */
 body {
-  font-size: 1rem;
-  font-weight: normal;
-  font-weight: initial;
+  font-size: 14pxem;
+  font-weight: 400;
+  /* font-weight: initial; */
   line-height: 1.5;
-  font-family: "Rubik", sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  font-family: "Nunito", "Segoe UI", arial;
+  /* /* -webkit-font-smoothing: antialiased;  */
+} 
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -17900,7 +17904,7 @@ div.tagsinput {
   .jsgrid .jsgrid-table td {
     vertical-align: middle;
     font-size: 0.875rem;
-    line-height: 1;
+    line-height: 2;
     white-space: nowrap; }
     .table th img, .jsgrid .jsgrid-table th img,
     .table td img,
