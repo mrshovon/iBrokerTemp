@@ -62,7 +62,7 @@ body {
   transition: all 0.35s;
 }
 .tab-switch:checked + .tab-label {
-  background: white;
+  background: #f3f3ff;
   color: black;
   /* border-bottom: 1px solid rgb(218, 215, 215); */
   border-right: 1px solid rgb(218, 215, 215);
