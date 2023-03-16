@@ -8932,7 +8932,9 @@ select.tt-hint:focus::-ms-value {
   padding-bottom: calc(0.56rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
-  line-height: 1; }
+  line-height: 1;
+  color: #34395e ;
+  }
 
 .col-form-label-lg {
   padding-top: calc(0.94rem + 1px);
@@ -16924,13 +16926,15 @@ code {
 .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-search__field, .typeahead,
 .tt-query,
 .tt-hint {
-  border: 1px solid #2c2e33;
+  /* border: 1px solid #2c2e33; */
+  background-color: #fdfdff;
+    border-color: #e4e6fc;
   height: calc(2.25rem + 2px);
   font-weight: normal;
   font-size: 0.875rem;
   padding: 0.625rem 0.6875rem;
   background-color: #2A3038;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   color: #ffffff; }
   .form-control:focus, .asColorPicker-input:focus, .dataTables_wrapper select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=text],
   .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=number], .select2-container--default .select2-selection--single:focus, .select2-container--default .select2-selection--single .select2-search__field:focus, .typeahead:focus,
@@ -18475,7 +18479,7 @@ body.avgrund-active {
   .dataTables_wrapper .dataTable thead .sorting_asc_disabled:after,
   .dataTables_wrapper .dataTable thead .sorting_desc_disabled:before,
   .dataTables_wrapper .dataTable thead .sorting_desc_disabled:after {
-    line-height: 2.5;
+    line-height: 9px;
     font-family: Material Design Icons;
     font-size: .65rem; }
   .dataTables_wrapper .dataTable thead .sorting:before,
@@ -18483,15 +18487,15 @@ body.avgrund-active {
   .dataTables_wrapper .dataTable thead .sorting_desc:before,
   .dataTables_wrapper .dataTable thead .sorting_asc_disabled:before,
   .dataTables_wrapper .dataTable thead .sorting_desc_disabled:before {
-    content: "\F05D";
-    right: 1.2em; }
+    content: "▲";
+    bottom: 50%; }
   .dataTables_wrapper .dataTable thead .sorting:after,
   .dataTables_wrapper .dataTable thead .sorting_asc:after,
   .dataTables_wrapper .dataTable thead .sorting_desc:after,
   .dataTables_wrapper .dataTable thead .sorting_asc_disabled:after,
   .dataTables_wrapper .dataTable thead .sorting_desc_disabled:after {
-    content: "\F045";
-    right: 0.2em; }
+    content: "▼";
+    top: 50%; }
   .dataTables_wrapper .dataTables_paginate {
     margin-top: 20px; }
   .dataTables_wrapper .dataTables_info {
