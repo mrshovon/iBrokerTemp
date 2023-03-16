@@ -37,9 +37,9 @@ body {
   line-height: 2.75em;
   height: 3em;
   padding: 0 1.618em;
-  background: #aeb6b4;
+  background: #f3f3ff;
   /* border-right: 0.125rem solid #16a085; */
-  color: #fff;
+  color: rgb(10, 140, 191);
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
@@ -52,7 +52,7 @@ body {
   height: auto;
   position: absolute;
   z-index: 1;
-  top: 6.65em;
+  top: 9.5em;
   left: 1.79em;
   padding: 1.618rem;
   background: #23514d;
@@ -62,7 +62,7 @@ body {
   transition: all 0.35s;
 }
 .tab-switch:checked + .tab-label {
-  background: #f3f3ff;
+  background: white;
   color: black;
   /* border-bottom: 1px solid rgb(218, 215, 215); */
   border-right: 1px solid rgb(218, 215, 215);
